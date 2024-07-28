@@ -3,11 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript Introduction</title>
-</head>
-<body>   
-    <div class="box"> I am Box</div>
-    <button>Submit</button>
-    <script src="script.js"></script>
-</body>
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css" /> 
+</head> 
+<body> 
+    <!-- main html -->
+    <div class="container"> 
+        <h1>Student Grade Calculator of BICTE 3rd Semester</h1> 
+        <div class="screen-body-item"> 
+            <div class="app"> 
+                <div class="form-group"> 
+                    <!-- option for taking the input -->
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Web Technology"
+                        id="webTech"
+                    /> 
+                </div> 
+                <div class="form-group"> 
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Learning Psychology"
+                        id="lp"
+                    />
+                </div> 
+                <div class="form-group"> 
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="21st Century Skills"
+                        id="cs21"
+                    /> 
+                </div>
+                <div class="form-group"> 
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="DSA"
+                        id="dsa"
+                    /> 
+                </div> 
+                <div class="form-group"> 
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="COA"
+                        id="coa"
+                    /> 
+                </div> 
+                <div class="form-group"> 
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Maths"
+                        id="math"
+                    /> 
+                </div> 
+                <div> 
+                    <input
+                        type="button"
+                        value="Show Percentage"
+                        class="form-button"
+                        onclick="calculate()"
+                    /> 
+                </div> 
+            </div> 
+        </div> 
+        <!-- for showing the result -->
+        <div class="form-group showdata"> 
+            <p id="showdata"></p> 
+        </div> 
+    </div> 
+    <!-- adding external javascript file -->
+    <script src="script.js"></script> 
+</body> 
 </html>
